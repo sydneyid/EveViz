@@ -6,13 +6,13 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="EveViz - Visualization Toolkit for Astronomical Event Data">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Yael Kaliner, Luca Illig, Pablo Broders, Helena Niethammer">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -32,30 +32,19 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Yael Kaliner, Luca Illig, Pablo Broders, Helena Niethammer">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="event cameras">
+  <meta property="article:tag" content="astronomy visualization">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_title" content="EveViz - Visualization Toolkit for Astronomical Event Data">
+  <meta name="citation_author" content="Broders, Pablo">
+  <meta name="citation_author" content="Illig, Luca">
+  <meta name="citation_author" content="Kaliner, Yael">
+  <meta name="citation_author" content="Niethammer, Helena">
+  <meta name="citation_publication_date" content="2026">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
   
@@ -74,11 +63,11 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>EveViz - Visualization Toolkit for Astronomical Event Data</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/EveViz.png">
+  <link rel="apple-touch-icon" href="static/images/EveViz.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -108,6 +97,10 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
@@ -119,7 +112,7 @@
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Yael Kaliner",
         "affiliation": {
           "@type": "Organization",
           "name": "INSTITUTION_NAME"
@@ -127,7 +120,23 @@
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Luca Illig",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Pablo Broders",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Helena Niethammer",
         "affiliation": {
           "@type": "Organization",
           "name": "INSTITUTION_NAME"
@@ -186,53 +195,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+  
 
   <main id="main-content">
   <section class="hero">
@@ -241,23 +204,23 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">EveViz - Visualization Toolkit for Astronomical Event Data</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                Pablo Broders,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  Luca Illig,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    Yael Kaliner,
+                  </span>
+                  <span class="author-block">
+                    Helena Niethammer
                   </span>
                   </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  <div class="has-text-centered" style="margin-top: 0.5rem;">
+                    <span style="font-size: 1.1rem;">Research Supervisor: Dr. Sydney Dolan</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -269,20 +232,10 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Report Description</span>
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
@@ -294,17 +247,6 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -314,23 +256,7 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -341,7 +267,8 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            EveViz is a user friendly and extensible graphical user interface for loading, processing, exporting, and visualizing event camera data. This enables users to process and explore event recordings in a structured and intuitive way. The system supports multiple input formats, integrates data-cleaning methods, and provides a range of visualization approaches for both spatial and temporal analysis. As a result, EveViz improves the practical usability of event-based data and provides a flexible framework for further research and application in domains such as space-based object detection and star tracking.
+
           </p>
         </div>
       </div>
@@ -351,123 +278,111 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+
+<!--/ Backgroundn. -->
+<section class="section" id="Eventcamera_Description">
+  <div class="container is-max-desktop content">
+  <h2 class="title">What are event cameras?</h2>
+  <p> Event-based vision is an alternative framework within visual sensing that pulls inspiration from the human visual system’s capability to detect and respond to motion changes in the environment. the vision system receives visual input asynchronously and transports this input to the visual cortex for processing. Cells in the retinal, composed of photoreceptors, bipolar cells, and ganglion cells, work together to detect changes in light intensity and motion. This biological system has inspired the development of event cameras, which operate on a similar principle.</p>
+  <img src="./static/images/event_pixel_old_design.png"
+    class="center-image"
+    alt="Event pixel diagram. light hits the photoreceptor, which converts it to a voltage. voltage is carried to a change amplifier, which changes its intensity. Then the signal is carried to the comparatators, which convert input into events by comparing it against thresholds."
+    style="max-width: 80%; height: auto;"/>  
+  <p><b>Figure 1.</b> Event cameras mimic the structure of retinal cells by using pixels that independently convert light into voltage signals, responding to changes in brightness detected at each pixel.</p>
+
+  <p>Events are read off a chip in the format <i>(t,x,y,p)</i> which includes the pixel's <i>xy</i> address on the pixel array, the polarity <i>(p)</i> of the change (ON or OFF) and a microsecond timestamp <i>(t)</i>. Together, the thousands of pixels in an event camera represent a dynamic view of the scene. The asynchronous update of each pixel occurs at an exceptionally high temporal resolution, enabling these cameras to adeptly capture fast-moving objects and dynamic scenes without the motion blur typically associated with frame cameras. Another key benefit of this class of camera is its ability to measure light intensity differences. Similar to the human eye, the event camera detects changes on a logarithmic scale, rather than with absolute values. This allows it to handle a wide range of lighting conditions effectively, avoiding common issues like overexposure or underexposure encountered with traditional frame camera systems. This adaptability is particularly valuable in environments with challenging lighting conditions like space. 
+  </p>
+
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <!-- First GIF -->
+  <div>
+    <img src="./static/images/normal_sc1.gif" alt="Description of first GIF" style="height: 300px; width: auto;" />
+  </div>
+
+  <!-- Second GIF -->
+  <div>
+    <img src="./static/images/event_sc1.gif" alt="Description of second GIF" style="height: 300px; width: auto;" />
   </div>
 </div>
+
+<!-- Figure caption -->
+<p style="text-align: center; margin-top: 10px;">
+  <strong>Figure 2.</strong> Side-by-side comparison of frame camera capture of a satellite detumbling (left), and an event camera capture (right).
+</p>
+
+
 </div>
 </section>
-<!-- End image carousel -->
 
 
+<!--/ Toolkit Features. -->
+<section class="section" id="Background">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Toolkit Features</h2>
+    <p>
+      The GUI is split into eight individual windows: Loading Data, Event Visualization, Tune Parameters, Frame Visualization, Lognormal Frame Visualization, Frame Video, 3D Visualization, and Voxel Visualization. Those windows are interconnected, as shown in Figure 3, allowing the user to navigate from window to window without restarting the tool. The Event Visualization window is the homepage of the GUI, offering several visualizations and additional features, and only terminating if a new file is loaded.
+    </p>
 
+    <figure style="text-align: center; margin: 2rem 0;">
+      <img src="./static/images/structure_overview.png"
+           alt="Structure overview of the EveViz toolkit"
+           style="max-width: 100%; height: auto;" />
+      <figcaption style="margin-top: 0.75rem;">
+        <b>Figure 3.</b> Overview of the EveViz toolkit structure.
+      </figcaption>
+    </figure>
+    <p> The Loading Data window (see Figure 4) is the entry point of the tool. It allows file selection, detects the file type, and converts input file formats into a unified event storage data type used across EveViz. The tool is designed to work with .raw, .hdf5, .bin, and .txt file types. .bin is a specific file type associated with an event compression algorithm, SEZ.</p>
+    <figure style="text-align: center; margin: 2rem 0;">
+      <img src="./static/images/LoadingData.png"
+           alt="EveViz loading data interface"
+           style="max-width: 100%; height: auto;" />
+      <figcaption style="margin-top: 0.75rem;">
+        <b>Figure 4.</b> Loading data in EveViz.
+      </figcaption>
+    </figure>
+    <p> Figure 5 shows the next window once the file has been uploaded into the GUI. At the top, an overview of the file data is provided. This contains key information like the length of the event recording, the file name, and the number of events.</p>
+    <p> Underneath the file overview is the filtering section. By checking any of these checkmarks, its possible to post-process the data to remove elements like hot pixels, or extremely noisy data through median filters or density filters.</p>
+    <p> Finally, to visualize the file, the visualization box shows the different types of visualizations available. It is posible to view the event data in a 2D representation, a 3D representation, and as a voxel. </p>
+    <figure style="text-align: center; margin: 2rem 0;">
+      <img src="./static/images/EventVisualization.png"
+           alt="Event visualization in EveViz"
+           style="max-width: 100%; height: auto;" />
+      <figcaption style="margin-top: 0.75rem;">
+        <b>Figure 5.</b> EveViz HomePage.
+      </figcaption>
+    </figure>
+    <p> Figure 6 shows the 2D visualization window. Users can enter a specific time range that they are interested in seeing, and the specific events (positive, negative or both). For all visualizations, it is possible to save the associated figure generated by the GUI. Additionally, a comparison of the data before and after filtering is possible with a side-by-side plot if the 'Compare' feature is used.</p>
+    <figure style="text-align: center; margin: 2rem 0;">
+      <img src="./static/images/FrameVisualization.png"
+           alt="Frame visualization in EveViz"
+           style="max-width: 100%; height: auto;" />
+      <figcaption style="margin-top: 0.75rem;">
+        <b>Figure 6.</b> Frame visualization.
+      </figcaption>
+    </figure>
+    <p> Figure 7 shows the log-normal frame visualization window. This window allows users to visualize the data using a log-normal distribution, which can help in identifying patterns and anomalies that are not easily visible in the standard frame visualization. When viewing star data, this lognormal representation is much better for star detectability, as stars produce repeated events in the same pixel that will be obvious in log form, that might otherwise just look like noise in a traditional 2D accumulation.</p>
+    <figure style="text-align: center; margin: 2rem 0;">
+      <img src="./static/images/LognormalFrameVisualization.png"
+           alt="Log-normal frame visualization in EveViz"
+           style="max-width: 100%; height: auto;" />
+      <figcaption style="margin-top: 0.75rem;">
+        <b>Figure 7.</b> Log-normal frame visualization.
+      </figcaption>
+    </figure>
+    <p> Figure 8 shows the 3D visualization window. This window allows users to explore the event data in a three-dimensional space, providing a more comprehensive view of the spatial relationships and structures within the data and how they evolve over time.</p>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+    <figure style="text-align: center; margin: 2rem 0;">
+      <img src="./static/images/3DVisualization.png"
+           alt="3D visualization in EveViz"
+           style="max-width: 100%; height: auto;" />
+      <figcaption style="margin-top: 0.75rem;">
+        <b>Figure 8.</b> 3D visualization.
+      </figcaption>
+    </figure>
+
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
 
 
 <!--BibTex citation -->
@@ -480,12 +395,10 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{EveViz2026,
+  title={EveViz - Visualization Toolkit for Astronomical Event Data},
+  author={Yael Kaliner and Luca Illig and Pablo Broders and Helena Niethammer},
+  year={2026}
 }</code></pre>
     </div>
 </section>
@@ -510,11 +423,7 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
